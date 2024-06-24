@@ -37,7 +37,7 @@ jobs:
 
   deploy:
     runs-on: ubuntu-latest
-    if: github.repository == 'karthi-ltim/test1' 
+    if: github.actor == 'karthi-ltim' 
     #needs: build
     steps:
     - name: Deploy step
