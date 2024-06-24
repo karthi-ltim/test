@@ -1,0 +1,15 @@
+name: "Manual"
+
+on:
+  workflow_dispatch:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Testing Manual workflow step
+      run: echo "THIS IS FIRST CUSTOM GITHUB ACTIONS WORKFLOW FILE" 
+    - name: step2
+      run: echo "just adding step 2"
