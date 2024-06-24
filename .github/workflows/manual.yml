@@ -12,4 +12,4 @@ jobs:
     - name: Testing Manual workflow step
       run: echo "THIS IS FIRST CUSTOM GITHUB ACTIONS WORKFLOW FILE" 
     - name: Finding the owner and org of the repo
-      run: echo $GITHUB.ACTOR
+      run: echo "$GITHUB_ACTOR"
