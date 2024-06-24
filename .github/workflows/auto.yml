@@ -21,5 +21,5 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-    -name: Deploy step
-     run: echo "This is my first deploy step"
+    - name: Deploy step
+      run: echo "This is my first deploy step"
