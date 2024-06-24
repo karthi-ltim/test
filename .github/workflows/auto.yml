@@ -17,3 +17,9 @@ jobs:
         echo "$GITHUB_REPOSITORY"
         echo "$GITHUB_ACTION"
         echo "$GITHUB_WORKFLOW"
+
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    -name: Deploy step
+     run: echo "This is my first deploy step"
