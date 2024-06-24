@@ -15,6 +15,10 @@ jobs:
 
   build:
     runs-on: ubuntu-latest
+    env:
+      VARIABLE1: "var1"
+      VARIABLE2: "var3"
+      
     steps:
     - name: Checkout
       uses: actions/checkout@v1
@@ -27,7 +31,9 @@ jobs:
         echo "$GITHUB_ACTION"
         echo "$GITHUB_WORKFLOW"
     - name: workflow variable
-      run: echo "value of USER_NAME is $USER_NAME" 
+      run: echo "value of USER_NAME is $USER_NAME"
+    - name: workflow variable
+      run: echo "value of VARIABLE2 is $VARIABLE2" 
 
   deploy:
     runs-on: ubuntu-latest
