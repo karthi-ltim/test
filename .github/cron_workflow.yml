@@ -1,9 +1,10 @@
 name: cron workflow
 
 on:
-  cron: */5 * * * *
-    branches:
-       - main 
+  schedule:
+    - cron: */5 * * * *
+        branches:
+          - main 
 
 jobs:
   build:
