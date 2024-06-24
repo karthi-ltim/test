@@ -33,7 +33,7 @@ jobs:
     - name: workflow variable
       run: echo "value of USER_NAME is $USER_NAME"
     - name: workflow variable
-      run: echo "value of VARIABLE2 is $VARIABLE2" 
+      run: echo "value of VARIABLE2 is $VARIABLE3" 
 
   deploy:
     runs-on: ubuntu-latest
@@ -42,6 +42,6 @@ jobs:
     - name: Deploy step
       run: echo "This is my first deploy step"
     - name: workflow variable
-      run: echo "value of VARIABLE1 is $VARIABLE1"
+      run: echo "value of VARIABLE2 is $VARIABLE1"
     #- name: Viewing the content of sample1 file
     #  run: cat sample1.txt
