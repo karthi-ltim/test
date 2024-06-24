@@ -9,8 +9,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: Testing Manual workflow step
-      run: echo "THIS IS FIRST CUSTOM GITHUB ACTIONS WORKFLOW FILE" 
+    - name: Checkout
+      uses: actions/checkout@v1
+    - name: Listing the contents on the repo
+      run: ls -al  
     - name: Finding the owner and org of the repo
       run: |
         echo "$GITHUB_ACTOR"
