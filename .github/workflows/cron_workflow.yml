@@ -8,6 +8,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Testing cron steps
-        run: echo "THIS IS FIRST CUSTOM GITHUB ACTIONS WORKFLOW FILE" 
+    - name: Testing cron steps
+      run: echo "THIS IS FIRST CUSTOM GITHUB ACTIONS WORKFLOW FILE" 
 
