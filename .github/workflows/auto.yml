@@ -30,6 +30,9 @@ jobs:
         echo "$GITHUB_REPOSITORY"
         echo "$GITHUB_ACTION"
         echo "$GITHUB_WORKFLOW"
+        echo "$GITHUB_EVENT"
+        echo "$GITHUB_EVENTNAME"
+
     - name: workflow variable
       run: echo "value of USER_NAME is $USER_NAME"
     - name: workflow variable
